@@ -15,7 +15,13 @@
 }
 
 .mt-5{
-    color: rgb(13, 13, 32);
+    color: rgb(0, 0, 0);
+  font-size: 500%;
+}
+.botcolor{
+    color:rgb(0, 255, 21);
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+        
 }
 
 body {
@@ -45,20 +51,13 @@ a {
      text-decoration: none; 
     }
     .nav-linkimg{
-        z-index: 1;
-        position: absolute;
-        width: 20%;
         border-radius:10%;
         border: 2px solid rgb(255, 255, 255);
-        margin: 3%;
-        top:43%;
+        
     }
     .nav-link{
-        
-        
         z-index: 2;
-        font-size: 150%;
-        color: black;
+        font-size: 200%;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 .nav-link:hover{
@@ -135,7 +134,7 @@ section {
     
 }
 
-.nav-link { color: var(--dark-color); 
+.nav-link { color: rgb(26, 20, 114); 
 
     
 }
@@ -153,8 +152,48 @@ section {
 .navbar-toggler { font-size: 40px; }
 .navbar-toggler:focus { outline: none; }
 
+/*ventanas*/
+.ventana{
+    background:rgb(34, 44, 100);
+    width: 70%;
+    height: 70%;
+    color:rgb(109, 67, 67);
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    border-radius: 5%;
+    position: fixed;
+    left: 15%;
+    z-index: 3;
+    top:20% ;
+    display: none;
+}
+#cerrar{
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+
 
 /*IO*/
+.botonl{
+    list-style: none;
+}
+.btn-info{
+    font-size: 200%;
+    padding: 2% 3%;
+    color: rgb(23, 0, 228);
+    border-radius:4%;
+    border: 2px solid rgb(204, 200, 193);
+    box-shadow:5px 5px 5px rgb(106, 150, 163);
+}
 /*boton ir todo*/
 .wrap {
     height: 100%;
@@ -167,7 +206,7 @@ section {
     min-width: 300px;
     min-height: 60px;
     font-family: 'bold','Nunito', sans-serif;
-    font-size: 22px;
+    font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 1.3px;
     font-weight: 700;
@@ -245,6 +284,7 @@ section {
 //////////////*/
 
 #hero {
+    
     background-image: url(../../assets/images/fondo2.png);
     background-size: cover;
     height: 100%;
@@ -260,10 +300,7 @@ section {
 /* //////////////
    Portfolio
 //////////////*/
-h2{
-    font-size: 200%;
-   
-}
+
 .row{
     display: flex;
 }
@@ -292,17 +329,19 @@ h2{
     position: absolute;
     
     left: 25px;
-    z-index: 9000;
+    z-index: 1;
+    
 }
 
 
 
 .portfolio-details a h2, .portfolio-details a p {
-    color: var(--white-color);
-   
+    color: rgb(0, 255, 21);
+    font-size: 250%;
 }
 h2{
     text-decoration: none;
+    
 }
 /* //////////////
    Members
